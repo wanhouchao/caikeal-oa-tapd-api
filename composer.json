@@ -1,5 +1,5 @@
 {
-    "name": "caikeal/oa-tapd-api",
+    "name": "wanhc/oa-tapd-api",
     "description": "OA TAPD SDK",
     "keywords": [
         "oa-tapd",
@@ -9,7 +9,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "caikeal",
+            "name": "wanhc",
             "email": "546487590@qq.com"
         }
     ],
