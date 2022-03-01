@@ -1,0 +1,59 @@
+{
+    "name": "caikeal/oa-tapd-api",
+    "description": "OA TAPD SDK",
+    "keywords": [
+        "oa-tapd",
+        "oa-tapd-sdk",
+        "sdk"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "caikeal",
+            "email": "546487590@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": ">=5.6",
+        "guzzlehttp/guzzle": "^6.3",
+        "ext-libxml": "^7.1",
+        "ext-simplexml": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-fileinfo": "*",
+        "ext-curl": "*",
+        "pimple/pimple": "^3.2"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "OaTapdApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OaTapdApi\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OaTapdApi\\LaravelOATapd\\ServiceProvider"
+            ],
+            "aliases": {
+                "LaravelOATapd": "OaTapdApi\\LaravelOATapd\\Facade"
+            }
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    ]
+}
